@@ -1,0 +1,145 @@
+{
+  "main": {
+    "id": "9d1ba66ab2597349",
+    "type": "split",
+    "children": [
+      {
+        "id": "3f31f423235c855d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "054afe38df04b841",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "M2-introducing-cloud-architecting.md.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "bf45d84d27f08718",
+    "type": "split",
+    "children": [
+      {
+        "id": "6fb55e94de657602",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0b92b70716a26380",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "fff78e581cc9ae9f",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "901c6e5038357efe",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "right": {
+    "id": "860d93b1906eb903",
+    "type": "split",
+    "children": [
+      {
+        "id": "da3f16720ab1897a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fdcd853e6fbcb94c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "M2-introducing-cloud-architecting.md.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "7e4d04ebe75353dc",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "M2-introducing-cloud-architecting.md.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "eceb3259452dccfc",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "95fab645b60bcc0e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "M2-introducing-cloud-architecting.md.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "054afe38df04b841",
+  "lastOpenFiles": [
+    "M2-introducing-cloud-architecting.md.md",
+    "well-architected-framework.png"
+  ]
+}
