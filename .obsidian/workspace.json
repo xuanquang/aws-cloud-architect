@@ -11,8 +11,36 @@
             "id": "43b792f8dabecb34",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "m4-adding-a-compute-layer.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "bacd6e28b052de3f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "m4-lab.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "637e9eb1d1b4b8a5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "KC.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -82,6 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "m4-adding-a-compute-layer.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,6 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "m4-adding-a-compute-layer.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -119,7 +149,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "m4-adding-a-compute-layer.md"
+              }
             }
           }
         ]
@@ -131,6 +163,9 @@
   },
   "active": "43b792f8dabecb34",
   "lastOpenFiles": [
+    "m4-lab.md",
+    "KC.md",
+    "m4-adding-a-compute-layer.md",
     "M3-adding-a-storage-layer.md",
     "m3 cafe business requirement.md",
     "M3-adding-a-storage-layer.md.md",
