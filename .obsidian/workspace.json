@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "15fdf41076d3ac4d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "m5-adding-a-database-layer.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "637e9eb1d1b4b8a5",
             "type": "leaf",
             "state": {
@@ -98,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "m5-adding-a-database-layer.md",
+                "file": "KC.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "m5-adding-a-database-layer.md",
+                "file": "KC.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "m5-adding-a-database-layer.md"
+                "file": "KC.md"
               }
             }
           }
@@ -149,17 +137,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "15fdf41076d3ac4d",
+  "active": "637e9eb1d1b4b8a5",
   "lastOpenFiles": [
+    "m6-lab.md",
     "KC.md",
-    "m5-lab.md",
+    "m6-creating-a-networking-env.md",
     "m5-adding-a-database-layer.md",
+    "m5-lab.md",
     "m4-adding-a-compute-layer.md",
     "m4-lab.md",
     "M3-adding-a-storage-layer.md",
     "m3 cafe business requirement.md",
-    "M3-adding-a-storage-layer.md.md",
-    "M2-introducing-cloud-architecting.md.md",
-    "well-architected-framework.png"
+    "M3-adding-a-storage-layer.md.md"
   ]
 }
