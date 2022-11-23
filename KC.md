@@ -161,3 +161,66 @@ the default network ACL >< the subnet ***custom*** network ACL
 
 10/ D false, C false
 Although this solution (in the SG, allow traffic only to and from address ranges that exclude the restricted addresses) would work, network masking for CIDR (Classless Inter-Domain Routing) blocks can make this complicated and difficult to manage.
+
+# m7
+
+1/ D (IPsec)
+AWS Site-to-Site VPN creates an encrypted connection by using IPsec. The connection is often across the internet, but it can also used to encrypt a connection across AWS Direct Connect (DX).  
+
+
+2/ a (uses 802.1q)
+AWS Direct Connect (DX) establishes a connection between an on-premises network and AWS through a Direct Connect location. It uses IEEE 802.1q virtual LAN (VLAN) tagging to separate traffic across the connection.
+
+3/ C
+VPC peering enables full network connectivity between 2 VPCs in the same account or in different accounts.
+
+4/ B (AWS Direct Connect (DX))
+AWS Direct Connect (DX) creates a dedicated private network connection that does not cross the internet. Because of this, it has more consistent performance than *an internet connection*.
+
+5/ A
+secure subnet = private subnet
+
+A VPC gateway endpoint adds a route for the AWS S3 prefix list to the subnet route tables that you select. The route keeps traffic between the subnet and S3 inside the Amazon network, instead of using the default behavior of routing traffic across the internet.  --> S3 là serverless nên ko thể cấu hình nằm trong subnet cụ thể. Tuy nhiên, với VPC gateway endpoint giúp thêm một  route cho  AWS S3 prefix list vào  route tables của subnet bạn chọn. Route giúp giữ traffic giữa subnet và S3 bên trong Amazon network, thay vì sử dụng traffic định tuyến trên internet
+
+By default, S3 is accessed through the internet. If the system uses a private IP address, it will not be able to communicate with S3.
+
+6/ B
+simplest, most cost-effective way
+
+VPC peering is point-to-point. Full connectivity between any 2 VPCs requires a separate peering connection. Connecting all VPCs in a group by using VPC peering requires a full mesh network. 
+
+(mesh: mắt lưới, tế bào; )
+
+Create VPC endpoints in A and C for the individual hosts that need to communicate withe each other.
+
+
+7/ B , D false
+
+
+(will move again in 2 weeks; a natural disaster; move a 2nd data center to a temporary facility with internet connectivity; needs a secure connection to the company's VPC that must be operational as soon as possible )
+
+VPC endpoints provide an alternate method of accessing AWS services from within a VPC. **They do not connect AWS and an on-premises network**.
+
+AWS Direct Connect requires hardware allocation and telecommunications circuit provisioning. This process can take longer than the 2 weeks that the data center is in the temporary facility.
+
+(allocation: phân bổ; circuit: mạch; )
+
+8/ D
+simplest way to connect 100 VPCs together
+
+AWS Transit Gateway connects VPCs and on-premises network through a central hub, and can scale to connect thounsands of VPCs.
+
+
+AWS VPN CloudHub is a feature of an AWS virtual private gateway, which enables you to connect multiple on-premises networks by using AWS Site-to-Site VPN in a hub-and-spoke topology.
+
+
+9/ c, D false
+
+DynamoDB uses a VPC gateway endpoint, which adds a route for the DynamoDB prefix list to the route table for an associated subnet. You cannot associate a VPC gateway endpoint through an Auto Scaling group.
+
+10/ D
+(most cost-effective solution for the backup connection)
+
+An AWS Site-to-Site VPN connection can be quickly established across the internet, as needed. The connection can be terminated when it is not needed. 
+
+# m8
