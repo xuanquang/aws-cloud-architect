@@ -194,10 +194,12 @@ VPC peering is point-to-point. Full connectivity between any 2 VPCs requires a s
 Create VPC endpoints in A and C for the individual hosts that need to communicate withe each other.
 
 
-7/ B , D false
+7/ B , D false ; C true
 
 
 (will move again in 2 weeks; a natural disaster; move a 2nd data center to a temporary facility with internet connectivity; needs a secure connection to the company's VPC that must be operational as soon as possible )
+
+An AWS Site-to-Site VPN connection can be quickly established cross the internet. The connection can be terminated when it is no loner needed.
 
 VPC endpoints provide an alternate method of accessing AWS services from within a VPC. **They do not connect AWS and an on-premises network**.
 
@@ -214,9 +216,14 @@ AWS Transit Gateway connects VPCs and on-premises network through a central hub,
 AWS VPN CloudHub is a feature of an AWS virtual private gateway, which enables you to connect multiple on-premises networks by using AWS Site-to-Site VPN in a hub-and-spoke topology.
 
 
-9/ c, D false
+9/ b, c, D false  --> a true
+(A compan's security admin requires that **EC2 instances  in a specific subnet must connect to DynamoDB through a VPC endpoint**. The company's network standards require that the infrastructure support **high availability**. Which action meets these architecture requirements without adding another subnet? )
 
-DynamoDB uses a VPC gateway endpoint, which adds a route for the DynamoDB prefix list to the route table for an associated subnet. You cannot associate a VPC gateway endpoint through an Auto Scaling group.
+VPC endpoints are horizontally scaled, redundant, and highly available.
+
+DynamoDB uses a VPC gateway endpoint, which adds a route for the DynamoDB prefix list to the route table for an associated subnet. You cannot associate:
+- a VPC gateway endpoint through an Auto Scaling group.
+- more than VPC gateway endpoint for a service with the same subnet.
 
 10/ D
 (most cost-effective solution for the backup connection)
@@ -224,3 +231,62 @@ DynamoDB uses a VPC gateway endpoint, which adds a route for the DynamoDB prefix
 An AWS Site-to-Site VPN connection can be quickly established across the internet, as needed. The connection can be terminated when it is not needed. 
 
 # m8
+
+1/ C
+IAM user names only need to be unique within an account.
+
+2/ A
+By defining the permissions in an IAM policy and putting the users in a group, you can set the same level  of permissions to all users in that group.
+
+3/ CD
+IAM roles only provide credentials after the individual, app., or service has assumed the role.
+
+
+4/ D
+Inline policies are embedded directly into a single user, group, role or resource.
+
+
+5/ C false --> b true 
+(evaluate: đánh giá, ước lượng)
+IAM checks for explicit deny statements before it checks for explicit allow statements .
+
+If an explicit allow statement or explicit deny statement is not present, IAM reverts to the default, which is to deny access. This is refered to as an implicit deny.
+
+6/ B false --> C true
+
+Attaching the policies to groups applies the same access rules to all members of the group. It also automatically applies the access rules to new users that are added to the group, and removes those access rules from users that are removed from the group.
+
+Attaching the policies to each user requires more work than needed. Each time the access requirements change, you must perform the same actions on each user, and also on any new users.
+
+7/ A
+Authenticating users through a trusted identity broker and store eleminates the need to create, manage, and secure user accounts for the app. within the app. itself or in AWS.
+
+
+8/ CE (AWS STS Security Token Service; Amazon Cognito)
+
+AWS STS enables you to request temporary limited-privilege credentials for users. 
+Amazon Cognito enables you to add user sign-up, sign-in, and access control to your web and mobile apps. It supports identity federation with social identity providers.
+
+9/ C
+Using AWS Organizations, you can automate account creation, create groups of accounts to reflect your business needs, and apply policies for these groups for governance. You can also simplify billing by settings up a single payment method for all of your AWS accounts.
+
+10/ B
+In AWS Organizations, applying an SCP to the OU can prevent employees from deleting the logs.
+The SCP cannot be overridden by any user (including the root user) of the AWS accounts in the OU.
+
+(overridden: giày xéo, gạt ra một bên)
+
+
+# m9
+
+
+# m10
+
+
+# m11
+
+# m12
+
+# m13
+
+# m14

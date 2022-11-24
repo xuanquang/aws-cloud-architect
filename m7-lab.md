@@ -9,4 +9,4 @@ The diagram summarizes what you will have built after you complete the lab.
 ![](m7-guide-lab.png)
 
 
-s
+TRY!
