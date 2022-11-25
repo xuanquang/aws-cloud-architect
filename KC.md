@@ -279,6 +279,49 @@ The SCP cannot be overridden by any user (including the root user) of the AWS ac
 
 # m9
 
+(accurate: chính xác; fleet: đội, nhóm; appropriate: thích hợp )
+
+1/ B
+EC2 auto scaling can launch instances in multuple AZs, which increases overall reliablity for an implementation.
+
+2/ A
+Scheduled scaling is most appropriate when you have a well-established pattern of demand.
+
+
+3/ c
+Target tracking scaling provides average Central Processing Unit (CPU) utilization as a standard target metric. You can specify the target value and let EC2 Auto Scaling handle the rest.
+
+4/ vertically scale; rds  -> D
+Changing to instance types with greater capacity is an example of vertically scaling.
+
+5/ horizontally scale; an Aurora db --> a 
+
+An Amazon Aurora cluster is made up of a primary Aurora instance and one/more Aurora Replicas. You can scale horizontally by adding read replicas
+
+6/ DynamoDB perform automatic scaling --> B false; C true
+
+Amazon DynamoDB uses the AWS Application Auto Scaling service to adjust the provisioned throughput capacity on your behalf. When the workload decreases, Application Auto Scaling decreases the throughput so that you do not pay for unused provisioned capacity.
+
+DynamoDB does not use read replicas. Relational db use read replicas.
+
+7/  TCP, solution ensures highest availablity --> C
+
+A Network Load Balancer can hadle any TCP, UDP, and TLS traffic. As a feature of ELB, a NLB is highly available. 
+
+
+8/ B
+Geolocation routing enables the separation of traffic based on location. A failover record that points to the application in Region B enables failover if the application in Region A becomes unhealthy.
+
+9/ build a HA web, uses server-side scripts to server dynamic HTML. Which solution provides **Highest Availability** for the **least cost** and **complexity**? --> B false; A true
+
+The Auto Scaling group can automatically launch instances to handle increased load, and terminate instances when they become unhealthy or when the load decreases. 
+The ALB is highly available and distributes the load across the instances.
+
+S3 web hosting does not support server-side scripts.
+
+10/ c
+By creating an alarm for your estimated charges, you are notifed when the estimated charges exceed the AWS Free Tier limit. 
+
 
 # m10
 
